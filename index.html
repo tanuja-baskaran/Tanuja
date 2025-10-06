@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">PERSONAL PORTFOLIO</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h1>Hello, I'm <span>Tanuja Baskaran</span></h1>
+      <p>Web Developer | Designer | Student</p>
+      <br>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a final-year Computer Science student at Sathyabama University with a deep passion for web development and software engineering. I specialize in Java, Python, and C, and I'm proficient in HTML, CSS, and JavaScript. I love solving problems, designing clean interfaces, and building useful applications.
+    </p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio using HTML & CSS to showcase my skills.</p>
+       
+      </div>
+      <div class="project-card">
+        <h3>Stock Management System</h3>
+        <p>A system to track inventory and manage stock using Java and MySQL.</p>
+        
+      </div>
+      <div class="project-card">
+        <h3>Stock Price Predictor</h3>
+        <p>ML-based model to forecast stock trends using Python libraries.</p>
+        
+      </div>
+    </div>
+  </section>
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:tanujabhaskaran@gmail.com">tanujabhaskaran@gmail.com</a></p>
+    
+  </section>
+
+  <script>
+    // Theme toggle
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
